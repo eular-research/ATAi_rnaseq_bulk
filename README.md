@@ -29,10 +29,10 @@ $ nextflow run nf-core/rnaseq  -profile test,conda  --outdir ./tmp/ -r 3.12.0
 $ nextflow run nf-core/rnaseq  -profile conda --input ./nextflow_samples.csv  --outdir ./tmp/ -r 3.12.0  --genome GRCh38
 
 ## Results of rnaseq nf-core pipeline 
-Results of the pipeline can be found in " --outdir " parameter. In this example, the dir should be named: " ./tmp/ " .
-To expore results:  
-* [first look of nf output](rnaseq_analysis/data_analysis/01_basic_explore.ipynb)
-* [gene expression analysis](rnaseq_analysis/data_analysis/02_GeneExpression.ipynb)
+Results of the pipeline can be found in " --outdir " parameter. In this example, the dir should be named: " ./tmp/ " . To expore results:  
+* [First look of nf output](rnaseq_analysis/data_analysis/01_basic_explore.ipynb)
+* [Gene expression analysis R](rnaseq_analysis/data_analysis/02_GeneExpression.ipynb)
+* [Single cell analysis R](rnaseq_analysis/data_analysis/03_GeneExpressionSingleCellR.ipynb)
 
 ## conda enviroments
 * Information about conda env are in [conda support](nf-code_support)
@@ -40,7 +40,7 @@ To expore results:
 * conda env create -f ./nf-code_support/env_merged_env.yml
 
 ## notebooks: 
-* R: install.packages('IRkernel')
+
 
 ## Clean afterwards 
 rm -rf ./work/
