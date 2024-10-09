@@ -1,5 +1,6 @@
 #!/bin/bash
 
+### Better to copy paste the following commands. 
 # Adding bioconda and conda-forge channels
 echo "Adding bioconda channel..."
 conda config --add channels bioconda
@@ -23,7 +24,8 @@ echo "Initializing conda for bash..."
 conda init 
 echo "Conda initialized for bash."
 
-#  
+### IF you can't see "(base)" in the beginning of cli then start a new terminal! ###
+# and activate:   
 conda activate env_nf
 echo "Conda environment 'env_nf' activated."
 
