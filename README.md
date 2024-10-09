@@ -35,7 +35,12 @@ To expore results:
 * [gene expression analysis](rnaseq_analysis/data_analysis/02_GeneExpression.ipynb)
 
 ## conda enviroments
-Information about conda env are in [conda support](nf-code_support)
+* Information about conda env are in [conda support](nf-code_support)
+
+* conda env create -f ./nf-code_support/env_merged_env.yml
+
+## notebooks: 
+* R: install.packages('IRkernel')
 
 ## Clean afterwards 
 rm -rf ./work/
