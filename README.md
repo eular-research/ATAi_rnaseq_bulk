@@ -1,4 +1,4 @@
-# Welcome to ATAi
+# Welcome to EULAR ATAi bulk NGS data
 This repository is dedicated to the analysis of bulk NGS data, with a focus on RMD-related diseases and experiments. It is part of the [EULAR ATAi](https://www.eular.org/eular-atai) project. 
 
 ## Design your RNAseq experiment
@@ -11,7 +11,7 @@ Design your RNAseq experiment and consider:
 ## Fetch public data
 The notebook [fetch_data notebook](rnaseq_analysis/data_fetch/00_fetch_data.ipynb) will help to fetch data from ENA. 
 
-## Fetch annotation of genes you are interested in ensembl
+## Fetch annotation of genes you are interested in Ensembl or find genes that might be interesting for your research
 The notebook [fetch gene annotation from Ensembl](rnaseq_analysis/data_fetch/00_fetch_geneset_annotation.ipynb) will help to get Ensembl annotation. 
 
 ## Run pipeline
@@ -27,6 +27,8 @@ $ nextflow run nf-core/rnaseq  -profile test,docker --outdir ./tmp/
 $ nextflow run nf-core/rnaseq  -profile test,conda  --outdir ./tmp/ -r 3.12.0
 * run pipeline for the data prepared: 
 $ nextflow run nf-core/rnaseq  -profile conda --input ./nextflow_samples.csv  --outdir ./tmp/ -r 3.12.0  --genome GRCh38
+* The output file should have directories and files like this: 
+[nf output](nf_rnaseq_successful_run)
 
 ## Analysis of rnaseq data example workflows  
 Results of the pipeline can be found in " --outdir " parameter. In this example, the dir should be named: " ./tmp/ " . To expore (mocked and real) data:  
