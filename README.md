@@ -1,6 +1,10 @@
 # Welcome to EULAR ATAi bulk NGS data
 This repository is dedicated to the analysis of bulk NGS data, with a focus on RMD-related diseases and experiments. It is part of the [EULAR ATAi](https://www.eular.org/eular-atai) project. 
 
+## conda enviroments
+* Information about conda env are in [conda support](nf-code_support)
+* Notebooks require a conda env, this can be created: conda env create -f ./nf-code_support/env_merged_env.yml . Otherwise, you need to install libraries and packages of the notebooks. 
+
 ## Design your RNAseq experiment
 Design your RNAseq experiment and consider: 
 * Biological question.
@@ -36,9 +40,6 @@ Results of the pipeline can be found in " --outdir " parameter. In this example,
 * [Gene expression analysis R](rnaseq_analysis/data_analysis/02_GeneExpression.ipynb)
 * [Single cell analysis R](rnaseq_analysis/data_analysis/03_GeneExpressionSingleCellR.ipynb)
 
-## conda enviroments
-* Information about conda env are in [conda support](nf-code_support)
-* Notebooks require a conda env, this can be created: conda env create -f ./nf-code_support/env_merged_env.yml 
 
 ## Clean afterwards 
 rm -rf ./work/
